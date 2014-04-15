@@ -22,7 +22,6 @@ public class CustomAdapter extends ArrayAdapter<Persona>{
 
      public CustomAdapter(Context context, ArrayList<Persona> objects){
          super(context, -1, objects);
-
          this.data = objects;
          this.inflater = LayoutInflater.from(context);
      }

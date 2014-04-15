@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //ActionBar de Color Negro
+        //ActionBar de Color Negro, solo por estetica
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#000000"));
         ActionBar actionbar = getSupportActionBar();
         actionbar.setBackgroundDrawable(colorDrawable);
@@ -92,9 +92,6 @@ public class MainActivity extends ActionBarActivity {
 
         // Ejecutamos Volley, solo aqui se manda a realizar
         queue.add(req);
-
-
-
     }
 
 
