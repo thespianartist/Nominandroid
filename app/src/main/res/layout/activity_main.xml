@@ -5,8 +5,21 @@
     android:orientation="vertical"
     tools:context="mx.gdgipn.nominandroid.app.MainActivity">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datos_crudos"
+            android:layout_gravity="center_horizontal" />
+    </ScrollView>
 
     <ListView
+        android:layout_weight="1"
         android:headerDividersEnabled="false"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

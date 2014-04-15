@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -60,6 +61,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onResponse(JSONArray response) {
 
+                //Un textview antes de la vista nos permite ver los datos crudos dentro de la misma app
+                TextView textView = (TextView) findViewById(R.id.datos_crudos);
+                textView.setText(response.toString());
                 //dejamos en el Log un pequeño mensaje con el response como string para ver un preview de lo que recibimos
                 Log.e("respeusta", response.toString());
 
